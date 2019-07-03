@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natorus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastiangorski/natours-project.git"
+  },
+  "author": "Sebastian Górski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastiangorski/natours-project/issues"
+  },
+  "homepage": "https://github.com/sebastiangorski/natours-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
