@@ -1,0 +1,46 @@
+.composition {
+    display: grid;
+    grid-template-rows: repeat(5, 5vw);
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+
+    &__photo {
+        display: block;
+        height: 100%;
+        width: 110%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        object-fit: cover;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem; // Space between outline and img
+
+
+        &--p1 {
+            grid-row: 1 / span 3;
+            grid-column: 2 / span 4;
+        }
+    
+        &--p2 {
+            grid-row: 2 / span 3;
+            grid-column: 5 / span 4;
+        }
+    
+        &--p3 {
+            grid-row: 3 / span 3;
+            grid-column: 3 / span 4;
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+
+    // Images not hovered are getting smaller
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }  
+}
